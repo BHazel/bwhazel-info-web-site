@@ -8,10 +8,10 @@ All my web sites use telemetry to collect information on how they are used and g
 
 * Page Load
 * Open/Close Popup Section
-* Button/Link Click to Access External Site
+* Button Click to Access External Site
 * Error Page Load
 
-This is powered by the [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) service (part of [Azure Monitor](https://azure.microsoft.com/en-gb/services/monitor/)) on [Microsoft Azure](https://azure.microsoft.com/en-gb/).  All data collected is only visible to me, as part of my personal Microsoft Azure account and subscription.
+This is powered by the [Application Insights](https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) service (part of [Azure Monitor](https://azure.microsoft.com/en-gb/services/monitor/)) on [Microsoft Azure](https://azure.microsoft.com/en-gb/).  All Application Insights resources are hosted within the UK South region in Microsoft Azure.  The data collected are only visible to me as part of my personal Microsoft Azure account and subscription.
 
 As part of the telemetry, the following personal information is collected and is retained for 90 days:
 
