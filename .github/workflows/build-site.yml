@@ -1,0 +1,24 @@
+name: Build Site
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9.2
+      - name: Install Dependencies
+        run: |
+          cd src
+          pip -r requirements.txt
+      - name: Build Site
+        run: |
+          make build
+      - name: Upload Build Artefact
+        uses: actions/upload-artifact@v2
+        with:
+          name: bwhazel-info-web-site
+          path: dist
