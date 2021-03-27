@@ -13,7 +13,7 @@ jobs:
       - name: Install Dependencies
         run: |
           cd src
-          pip -r requirements.txt
+          pip install -r requirements.txt
       - name: Build Site
         run: |
           make build
