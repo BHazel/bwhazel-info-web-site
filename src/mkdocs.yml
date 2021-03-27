@@ -1,3 +1,5 @@
 site_name: BWHazel Info
 theme:
   name: material
+  features:
+    - navigation.tabs
