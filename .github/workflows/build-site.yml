@@ -1,0 +1,36 @@
+name: Build Site
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9.2
+      - name: Install Dependencies
+        run: |
+          cd src
+          pip install -r requirements.txt
+      - name: Get Secrets (Development)
+        if: github.ref != 'refs/heads/master' && !contains(github.ref, '/rl-')
+        run: |
+          echo "azureAppInsightsKey=${{ secrets.AZURE_APP_INSIGHTS_KEY_DEV }}" >> $GITHUB_ENV
+      - name: Get Secrets (Production)
+        if: github.ref == 'refs/heads/master' || contains(github.ref, '/rl-')
+        run: |
+          echo "azureAppInsightsKey=${{ secrets.AZURE_APP_INSIGHTS_KEY_PROD }}" >> $GITHUB_ENV
+      - name: Apply Secrets
+        working-directory: ./src
+        run: |
+          find . -type f -exec sed -i "s/{{secrets.azureAppInsightsKey}}/${{ env.azureAppInsightsKey }}/g" {} +
+      - name: Build Site
+        run: |
+          make build
+      - name: Upload Build Artefact
+        uses: actions/upload-artifact@v2
+        with:
+          name: bwhazel-info-web-site
+          path: dist

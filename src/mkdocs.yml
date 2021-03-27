@@ -1,0 +1,6 @@
+site_name: BWHazel Info
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - navigation.tabs
