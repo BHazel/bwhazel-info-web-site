@@ -2,6 +2,8 @@
 
 This repository contains the source code for my info web site, including legal and technical details.
 
+**Current Site Version:** 1.0.0 _(27/03/2021)_
+
 ## Technologies
 
 * Material for MkDocs
