@@ -35,6 +35,26 @@ Please note that I do not collect telemetry from 3<sup>rd</sup> party widgets us
 * SoundCloud
 * Windy.com
 
+## Authentication & Authorisation
+
+**This section only applies to sites which require visitors to sign in via authentication and authorisation to access restricted functionality.  This does not apply to those sites if signing in is not required.**
+
+All authentication and authorisation is managed by [Azure Active Directory](https://azure.microsoft.com/en-gb/services/active-directory/) on [Microsoft Azure](https://azure.microsoft.com/en-gb/) and all sign in and sign out operations are performed using the processes and user interfaces from Microsoft.
+
+Signing into one of my sites requires an existing Microsoft account, either a personal account or a work or school account.  Granting access is a manual process done by me which starts with an invite to the "BWHazel Online Services" organisation, identified by the URL _bwhazel.onmicrosoft.com_.  When a visitor accepts this invite his or her Microsoft account is added as a guest user to this organisation.  Granting access to specific sites is also a manual process done by me which involves adding the guest user to Azure Active Directory groups.
+
+Adding a Microsoft account as a guest user requires me to know the visitor's name and e-mail address of the Microsoft account.  This information is only used be me to add the user to the "BWHazel Online Services" organisation and is not shared with any other individual or organisation.  The guest user is not a new account but grants access to the existing Microsoft account.  Said account can be managed in exactly the same way as before, including changing of passwords, without any knowledge by me.  No passwords are stored for guest users in the "BWHazel Online Services" organisation.
+
+By default all sites which use authentication and authorisation have access to the following permissions from a user account via the [Microsoft Graph](https://docs.microsoft.com/en-us/graph/permissions-reference):
+
+* _openid_: Signs users in using a work or school account and grants an application to see basic user profile information.
+* _profile_: Grants an application to see basic profile information (name, picture, username).
+* _User.Read_: Signs users in and grants the application to read profile information, including company details.
+
+Individual sites may require additional permissions and have different uses for user account data.  These are defined for each site as required in sections below.
+
+**It is the visitor's responsibility to ensure his or her account is properly secured and that it is appropriate for said account to be used, especially if it is not a personal account.  All visitors added as guest users agree to acceptable and respectful use of restricted functionality and must not use them for illegal or inappropriate activities.  I reserve the right to revoke access, temporarily or permanently, to any guest user at any time from any single, multiple or all sites if a visotor fails to comply with these statements.**
+
 ## Legacy Sites
 
 **This section applies to all sites marked as "LEGACY" on the Sites page.**
