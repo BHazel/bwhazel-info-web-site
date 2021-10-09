@@ -17,3 +17,6 @@ RUN make build
 
 FROM nginx AS publish
 COPY --from=build /src/dist /usr/share/nginx/html
+
+FROM nginx AS deploy
+COPY dist /usr/share/nginx/html
