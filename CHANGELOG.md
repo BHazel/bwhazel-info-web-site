@@ -1,5 +1,11 @@
 # Change Log
 
+## v1.0.2 _(09/10/2021)_
+
+* Add Aka.BWHazel to site list.
+* Update BWHazel API information.
+* Update all hosting platforms to be specific.
+
 ## v1.0.1 _(25/07/2021)_
 
 * Update privacy policy to cover authentication and authorisation.
