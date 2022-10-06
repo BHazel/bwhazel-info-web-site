@@ -1,7 +1,9 @@
 site_name: BWHazel Info
-copyright: Copyright &copy; Benedict W. Hazel, 2009-2021.  All views expressed are my own.  Site Version 1.0.2.
+copyright: Copyright &copy; Benedict W. Hazel, 2009-2022.  All views expressed are my own.  Site Version 1.1.0.
 theme:
   name: material
   custom_dir: overrides
   features:
     - navigation.tabs
+extra:
+  metaThemeColour: "#3f51b5"
