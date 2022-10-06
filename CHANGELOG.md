@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.1.0 _(06/10/2022)_
+
+* Add support for meta theme colour.
+
 ## v1.0.2 _(09/10/2021)_
 
 * Add Aka.BWHazel to site list.
