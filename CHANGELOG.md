@@ -1,5 +1,10 @@
 # Change Log
 
+## v1.2.0 _(20/12/2024)_
+
+* Update privacy policy to include generic cookie and Local Storage information, updated links, remove the Legacy section and rename Azure Active Directory to Microsoft Entra ID.
+* Update site list.
+
 ## v1.1.0 _(06/10/2022)_
 
 * Add support for meta theme colour.
