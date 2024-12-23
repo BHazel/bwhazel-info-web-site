@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.9.2
+          python-version: 3.13.1
       - name: Install Dependencies
         run: |
           cd src
@@ -30,7 +30,7 @@ jobs:
         run: |
           make build
       - name: Upload Build Artefact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: bwhazel-info-web-site
           path: dist
