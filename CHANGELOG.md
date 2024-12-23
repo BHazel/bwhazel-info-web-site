@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.2.1 _(23/12/2024)_
+
+* Update site list with Netlify hosting.
+
 ## v1.2.0 _(20/12/2024)_
 
 * Update privacy policy to include generic cookie and Local Storage information, updated links, remove the Legacy section and rename Azure Active Directory to Microsoft Entra ID.
