@@ -1,5 +1,9 @@
 # Change Log
 
+## v1.2.2 _(15/01/2025)_
+
+* Add banner announcing impending launch of new personal site.
+
 ## v1.2.1 _(23/12/2024)_
 
 * Update site list with Netlify hosting.
