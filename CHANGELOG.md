@@ -1,5 +1,10 @@
 # Change Log
 
+## v1.2.3 _(12/04/2025)_
+
+* Add Netlify redirect configuration.
+* Update banner with closure message and links to the new content.
+
 ## v1.2.2 _(15/01/2025)_
 
 * Add banner announcing impending launch of new personal site.
