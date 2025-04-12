@@ -2,6 +2,10 @@
 
 This repository contains the source code for my info web site, including legal and technical details.
 
+## ARCHIVE NOTICE _(12/04/2025)_
+
+This site has now closed and all content merged into my main web site.  The source code can be found [here](https://github.com/bhazel/bwhazel-portfolio-web-site.git).  As such, this repository has been archived.
+
 ## Technologies
 
 * Material for MkDocs
